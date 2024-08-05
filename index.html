@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lab 1</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1>Fetch Cats</h1>
+				<button id="fetch-button">Fetch Cat Fact</button>
+			</div>
+			<div id="container-api">
+				<div id="data-container"></div>
+			</div>
+			<div class="header-User">
+				<h1>Fetch Users</h1>
+				<button id="fetch-user-button">Fetch Users Info</button>
+			</div>
+			<div id="container-user-api">
+				<div id="data-user-container"></div>
+			</div>
+		</div>
+		<div id="anime-search">
+			<div id="form-container">
+				<h1>Anime Search</h1>
+				<form id="anime-form">
+					<label for="type"> Type: </label>
+					<select id="type" name="type">
+						<option value="">Seleccione el tipo</option>
+						<option value="tv">TV</option>
+						<option value="movie">Movie</option>
+						<option value="special">Special</option>
+						<option value="ona">Ona</option>
+						<option value="music">Music</option>
+						<option value="cm">CM</option>
+						<option value="pv">PV</option>
+						<option value="tv_special">TV Special</option>
+					</select>
+					<label for="query">Query: </label>
+					<input type="text" id="query" name="query" />
+					<label for="limit">Limit: </label>
+					<input type="number" id="limit" name="limit" />
+					<button type="submit">Search</button>
+				</form>
+				<button id="clear-results">Clear Results</button>
+			</div>
+
+			<div id="spinner" class="spinner"></div>
+
+			<div id="results"></div>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>

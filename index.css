@@ -1,0 +1,237 @@
+/* General Styles */
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: #f5f7fa;
+	color: #333;
+	margin: 0;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Container Styles */
+.container {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	max-width: 400px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Header Styles */
+.header,
+.header-User {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+h1 {
+	color: #333;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 0;
+}
+
+/* Button Styles */
+button {
+	width: 100%;
+	padding: 10px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+	transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+	background-color: #0056b3;
+	transform: scale(1.05);
+}
+
+/* Data Container Styles */
+#data-container,
+#data-user-container {
+	margin-top: 20px;
+	width: 100%;
+}
+
+/* Loading and Error Styles */
+.loading,
+.error {
+	font-size: 1em;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.loading {
+	color: #007bff;
+}
+
+.error {
+	color: #dc3545;
+}
+
+/* User Item Styles */
+.user-item {
+	background: #f9f9f9;
+	padding: 15px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-item img {
+	border-radius: 50%;
+	margin-right: 15px;
+	width: 50px; /* Ajustar tamaño de la imagen */
+	height: 50px; /* Ajustar tamaño de la imagen */
+}
+
+.user-item h2 {
+	font-size: 1.2em;
+	margin: 0;
+	color: #333;
+}
+
+.user-item p {
+	margin: 5px 0;
+	color: #555;
+}
+
+/* Anime Search Styles */
+#anime-search {
+	margin-top: 20px;
+	width: 100%;
+}
+
+#form-container {
+	max-width: 500px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+form {
+	margin: 0;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+	color: #333;
+}
+
+select,
+input[type='text'],
+input[type='number'] {
+	width: calc(100% - 22px);
+	padding: 10px;
+	margin-bottom: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+/* Clear Results Button */
+#clear-results {
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	background-color: #ff7b89;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+#clear-results:hover {
+	background-color: #f76472;
+}
+
+/* Results Styles */
+#results {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#results div {
+	width: 60%;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+/* Spinner Styles */
+.spinner {
+	border: 16px solid #f3f3f3;
+	border-top: 16px solid #3498db;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: spin 2s linear infinite;
+	margin: 20px auto;
+	display: none;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Anime Item Styles */
+.anime-item {
+	background: #f9f9f9;
+	padding: 15px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Centrando el contenido */
+	text-align: center; /* Centrar el texto */
+}
+
+.anime-item img {
+	width: 80px; /* Ajustar tamaño de la imagen */
+	height: 80px; /* Ajustar tamaño de la imagen */
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.anime-item h2 {
+	font-size: 1.2em;
+	margin: 0;
+	color: #333;
+}
+
+.anime-item p {
+	margin: 5px 0;
+	color: #555;
+}
